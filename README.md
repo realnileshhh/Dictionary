@@ -1,11 +1,11 @@
 
-# Wordicon | Dictionary Webapp
+# Wordicon | Dictionary WebApp
 
-Wordicon is your free online English dictionary and thesaurus with synonyms, related words and search.
+Wordicon is your free online English dictionary and thesaurus with synonyms, related words, and search.
 Audio pronunciations are available without the use of any separate app.
-You can find definitions, antonyms, synonyms and more in a simple and efficient manner.
+You can find definitions, antonyms, synonyms, and more in a simple and efficient manner.
 
-It contains more than 150,000 words and meanings, over 550,000 word families, and spelling suggestions if you're not sure how to spell a word. There are separate Word Lists for easy reference including Animals, Body parts, Adjectives, Occupations and more.
+It contains more than 150,000 words and meanings, over 550,000 word families, and spelling suggestions if you're not sure how to spell a word. There are separate word lists for easy reference, including animals, body parts, adjectives, occupations, and more.
 
 
 
@@ -21,13 +21,13 @@ https://wordicon.netlify.app/
 
 ## 🚀 About Me
 
-Hi I am Nilesh pursuing Engineering 🚂, interested in tech side of things and how exactly technology is bringing up revolution ⚔, my hobbies lie in the categories of Video Editing, also I love exploring pixel based graphic softwares, I feel freedom of expression and creativity lets human pass their limits. 🚀
+Hi, I am Nilesh, pursuing engineering 🎓. I'm interested in the technological side of things and how technology is causing revolutions ⚔️. My hobbies lie in the categories of video editing and graphic design. I also love exploring pixel-based graphic software. I feel freedom of expression and creativity let humans go beyond their limits. 🚀
+
 ## 🔗 Links
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/realnileshhh/)
 
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/realnileshhh)
-
 
 ## Run Locally
 
@@ -42,6 +42,7 @@ Go to the project directory
 ```bash
   cd wordicon
 ```
+
 ## Tech Stack
 
 **Stack:** HTML, CSS, Javascript
