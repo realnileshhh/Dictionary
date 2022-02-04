@@ -6,11 +6,25 @@
 *:not(i) {
   font-family: "Poppins", sans-serif;
 }
-body {
-  background-color: #ae9cff;
+:root{
+  --primary-color:  #ad98e7;
+  --secondary-color: #ffffff;
 }
+.dark-mode {
+  --primary-color:  #361557;
+  --secondary-color: #81818f;
+}
+body { 
+  background-color: var(--primary-color);
+}
+#icon {
+  width: 30px;
+  margin: 30px;
+  cursor: pointer;
+}
+
 .container {
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   width: 90vmin;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -20,26 +34,32 @@ body {
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: 1; /* Firefox */
+}
 .search-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  color: var(--secondary-color);
 }
 .search-box input {
   padding: 5px;
   width: 70%;
   border: none;
   outline: none;
-  border-bottom: 3px solid #ae9cff;
+  border-bottom: 3px solid var(--primary-color);
   font-size: 16px;
+  background-color: var(--secondary-color);
 }
 .search-box button {
   padding: 15px 0;
   width: 25%;
-  background-color: #ae9cff;
+  background-color: var(--primary-color);
   border: none;
   outline: none;
-  color: #ffffff;
+  color: var(--secondary-color);
   border-radius: 5px;
 }
 .result {
@@ -56,10 +76,10 @@ body {
 }
 .result button {
   background-color: transparent;
-  color: #ae9cff;
+  color: var(--primary-color);
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 18px;  
 }
 .result .details {
   display: flex;
@@ -74,7 +94,7 @@ body {
 .word-example {
   color: #575a7b;
   font-style: italic;
-  border-left: 5px solid #ae9cff;
+  border-left: 5px solid var(--primary-color);
   padding-left: 20px;
   margin-top: 30px;
 }
@@ -84,7 +104,7 @@ body {
 }
 .footer-basic {
   padding: 40px 0;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   color: #4b4c4d;
 }
 .footer-basic .copyright {
@@ -104,7 +124,7 @@ body {
 }
 ul {
   list-style-type: none;
-  color: white;
+  color: var(--secondary-color);
   height: 65px;
   font-size: 30px;
   display: flex;
