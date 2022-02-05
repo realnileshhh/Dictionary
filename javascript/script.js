@@ -29,9 +29,12 @@ btn.addEventListener("click", () => {
       sound.setAttribute("src", `https:${data[0].phonetics[0].audio}`);
     })
     .catch(() => {
-      result.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;
+      result.innerHTML = `<h3 class="error">(>_<) Couldn't Find Any Word </h3>`;
     });
 });
 function playSound() {
   sound.play();
+}
+function darkModeSwitch() {
+  document.body.classList.toggle("dark-mode");
 }
