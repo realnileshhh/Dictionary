@@ -17,13 +17,21 @@
     <title>Wordicon - Dictionary</title>
   </head>
   <body>
+    <nav>
+      <img
+        src="/Resources/images/moon.png"
+        id="icon"
+        alt="align box"
+        align="right"
+      />
+    </nav>
     <ul>
       <li>Wordicon</li>
     </ul>
     <audio id="sound"></audio>
     <div class="container">
       <div class="search-box">
-        <input type="text" placeholder="Type the word here.." id="inp-word" />
+        <input type="text" placeholder="Type the word here.." id="inp-word"/>
         <button id="search-btn">Search</button>
       </div>
       <div class="result" id="result"></div>
@@ -34,6 +42,19 @@
       </div>
     </div>
     <!-- Script -->
+    <!-- Light and Darkmode Script -->
+    <script>
+      var icon = document.getElementById("icon");
+
+      icon.onclick=function(){
+        document.body.classList.toggle("dark-mode");
+        if(document.body.classList.contains("dark-mode")){
+          icon.src="/Resources/images/sun.png";
+      }else{
+        icon.src="/Resources/images/moon.png";
+      }
+    }
+    </script>
     <script src="/javascript/script.js"></script>
   </body>
 </html>
