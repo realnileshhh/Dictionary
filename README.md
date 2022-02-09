@@ -11,7 +11,7 @@ It contains more than 150,000 words and meanings, over 550,000 word families, an
 
 ## Demo
 
-https://wordicon.netlify.app/
+https://wordicon-test.netlify.app/
 
 ## Screenshots
 
