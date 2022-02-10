@@ -207,6 +207,13 @@ header {
   color: #4433ff;
   font-size: medium;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-box button svg {
+  width:24px;
+  height:24px;
+
 }
 
 ::placeholder {
