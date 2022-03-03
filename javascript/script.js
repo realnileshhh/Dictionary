@@ -1,3 +1,5 @@
+const { default: src } = require("@chakra-ui/visually-hidden/dist/declarations/src");
+
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 const result = document.getElementById("result");
 const sound = document.getElementById("sound");
@@ -44,6 +46,7 @@ function DarkMode() {
 }
 //voice Recognition + transcript
 function mic() {
+    document.getElementById('imgvoice').src = 'voice.gif';
     let reco = new webkitSpeechRecognition();
     reco.lang = 'en-GB';
     reco.onresult = function(event) {

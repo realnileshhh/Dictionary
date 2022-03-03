@@ -327,3 +327,9 @@ header {
     -webkit-backdrop-filter: blur(4px);
     border: var(--glassmorphism-border);
 }
+
+#imgvoice {
+    object-position: 0px;
+    width: -060px;
+    height: 41px;
+}
