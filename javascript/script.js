@@ -1,4 +1,6 @@
+const { Button } = require("@chakra-ui/react");
 const { default: src } = require("@chakra-ui/visually-hidden/dist/declarations/src");
+const { ReadConcernLevel } = require("mongodb");
 
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 const result = document.getElementById("result");
@@ -44,6 +46,7 @@ function DarkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+let count = 0;
 //voice Recognition + transcript
 function mic() {
     document.getElementById('imgvoice').src = 'voice.gif';
@@ -52,8 +55,14 @@ function mic() {
     reco.onresult = function(event) {
         console.log(event);
         document.getElementById('inp-word').value = event.results[0][0].transcript;
+
     }
     reco.start();
+    let clear = setInterval(mytimer, 2500);
+
+    function mytimer() {
+        document.getElementById("imgvoice").src = 'voice.png';
+    }
 }
 //voice button api usage
 voicebtn.addEventListener("click", () => {
