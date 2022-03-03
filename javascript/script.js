@@ -58,11 +58,6 @@ function mic() {
 
     }
     reco.start();
-    let clear = setInterval(mytimer, 2500);
-
-    function mytimer() {
-        document.getElementById("imgvoice").src = 'voice.png';
-    }
 }
 //voice button api usage
 voicebtn.addEventListener("click", () => {
